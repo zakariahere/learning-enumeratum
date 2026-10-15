@@ -10,9 +10,11 @@ Every lesson is a small, runnable sbt package. I'm learning [enumeratum](https:/
 | # | Package | Topic |
 |---|---------|-------|
 | 1 | `lesson1` | `scala.Enumeration` vs sealed trait + case objects vs enumeratum |
+| 2 | `lesson2` | Custom `entryName`, naming mixins, enums with fields, `IntEnum` / `StringEnum` |
 
 ## Run
 
 ```bash
 sbt "runMain lesson1.PlainScalaDemo" "runMain lesson1.EnumeratumDemo"
+sbt "runMain lesson2.CustomNamesDemo" "runMain lesson2.WithFieldsDemo" "runMain lesson2.ValueEnumsDemo"
 ```
