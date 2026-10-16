@@ -79,6 +79,6 @@ object Source extends Enum[Source] {
 
 object LenientDemo extends App {
   println(s"case-insensitive: ${decode[Source](""""core_banking"""")}")
-  println(s"still strict-ish: ${decode[Source](""""CoreBanking"""")}")
+  println(s"scala name      : ${decode[Source](""""CoreBanking"""")}")
   println(s"encode          : ${(Source.CardSystem: Source).asJson.noSpaces}")
 }
