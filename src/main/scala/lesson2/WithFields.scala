@@ -2,7 +2,7 @@ package lesson2
 
 import enumeratum._
 
-// Enum entries are plain classes, so they can carry data and behaviour.
+
 sealed abstract class Currency(val symbol: String, val decimals: Int) extends EnumEntry {
   def format(minorUnits: Long): String =
     symbol + BigDecimal(minorUnits, decimals).toString // BigDecimal(unscaled, scale)

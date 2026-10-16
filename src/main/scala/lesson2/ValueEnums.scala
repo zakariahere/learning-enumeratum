@@ -28,6 +28,8 @@ object Country extends StringEnum[Country] {
 }
 
 object ValueEnumsDemo extends App {
+
+  println(Country.withValue("LU").value)
   println(s"Priority.withValue(5)       : ${Priority.withValue(5)}")
   println(s"Priority.withValueOpt(7)    : ${Priority.withValueOpt(7)}")
   println(s"Country.withValueOpt(\"LU\")  : ${Country.withValueOpt("LU").map(_.label)}")
